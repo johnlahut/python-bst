@@ -89,7 +89,7 @@ class Tree:
 
     def min(self, x: Node = None) -> Node:
         """
-        Returns a pointer to the maximum value of the BST
+        Returns a pointer to the minimum value of the BST
 
         :param x: Takes the root of the subtree to find the min, otherwise its the root
         :return: Pointer to maximum value of the tree
@@ -208,13 +208,3 @@ class Tree:
             node = temp
             temp = node.parent
         return temp
-
-
-tree = Tree()
-[tree.insert(x) for x in range(1, 16)]
-
-node = tree.search(5)
-tree.print()
-
-
-
